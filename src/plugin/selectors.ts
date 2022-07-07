@@ -10,7 +10,7 @@ import { ModularEngineGlobalState } from "modular-engine-types";
 
 import { createModularSelector } from "modular-utils";
 
-import { ModalState } from "./types";
+import { ModalPluginState } from "./types";
 
 import modalInitialState from "./initial-state";
 
@@ -23,8 +23,8 @@ import modalInitialState from "./initial-state";
  *
  */
 export const getModalView = (
-  state: ModularEngineGlobalState<{ modal?: ModalState }>
-): ModalState => state.modal || modalInitialState;
+  state: ModularEngineGlobalState<{ modal?: ModalPluginState }>
+): ModalPluginState => state.modal || modalInitialState;
 
 /**
  * Returns the app modal visibility

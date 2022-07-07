@@ -8,7 +8,7 @@
 
 import { ModularEngineEffects } from "modular-engine-types";
 
-import { ModalState } from "./types";
+import { ModalPluginState } from "./types";
 
 import {
   closeModal,
@@ -26,7 +26,7 @@ import {
  * @copyright Cataldo Cianciaruso 2022
  *
  */
-const modalReducer: ModularEngineEffects<ModalState> = {
+const modalReducer: ModularEngineEffects<ModalPluginState> = {
   [openModal.type]: (state, action) => ({
     ...state,
     isVisible: true,

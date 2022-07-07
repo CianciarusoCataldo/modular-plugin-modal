@@ -16,7 +16,7 @@ import { ModularEngineCustomState } from "modular-engine-types";
  * @copyright Cataldo Cianciaruso 2022
  *
  */
-export type ModalState = ModularEngineCustomState<{
+export type ModalPluginState = ModularEngineCustomState<{
   isVisible: boolean;
   type: string | null;
   context: Record<string, any>;

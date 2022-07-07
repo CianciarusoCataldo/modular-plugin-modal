@@ -12,3 +12,4 @@ export {
   getModalView,
   isModalVisible,
 } from "./plugin/selectors";
+export { ModalPluginState } from "./plugin/types";

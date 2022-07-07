@@ -6,7 +6,7 @@
  * @copyright Cataldo Cianciaruso 2022
  */
 
-import { ModalState } from "./types";
+import { ModalPluginState } from "./types";
 
 /**
  * Internal `modal` slice initial state
@@ -16,7 +16,7 @@ import { ModalState } from "./types";
  * @copyright Cataldo Cianciaruso 2022
  *
  */
-const modalInitialState: ModalState = {
+const modalInitialState: ModalPluginState = {
   isVisible: false,
   type: null,
   context: {},
