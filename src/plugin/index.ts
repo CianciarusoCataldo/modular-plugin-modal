@@ -22,7 +22,7 @@ const modal: ModularEnginePlugin = () => ({
         config: inputConfig,
         store,
       }) => {
-        store.dispatch(actions.openModal({ form: urlParam }));
+        urlParam && store.dispatch(actions.openModal({ form: urlParam }));
 
         return inputConfig;
       };
