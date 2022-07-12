@@ -3,5 +3,5 @@
 
 [Get Started](#getting-started)
 [Docs](#main)
-[Github](https://github.com/cianciarusocataldo/modular-engine)
-[NPM](https://www.npmjs.com/package/@cianciarusocataldo/modular-engine)
+[Github](https://github.com/cianciarusocataldo/modular-plugin-modal)
+[NPM](https://www.npmjs.com/package/modular-plugin-modal)

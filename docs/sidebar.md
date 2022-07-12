@@ -1,8 +1,8 @@
-- [Documentation](guide "Modular-engine - documentation")
+- [Documentation](guide "Modular-plugin-modal - documentation")
 - [Changelog](changelog "Modular-plugin-modal - changelog")
 - **Links**
-- [Github](https://github.com/cianciarusocataldo/modular-engine)
-- [NPM](https://www.npmjs.com/package/@cianciarusocataldo/modular-ui)
+- [Github](https://github.com/cianciarusocataldo/modular-plugin-modal)
+- [NPM](https://www.npmjs.com/package/modular-plugin-modal)
 - **Modular ecosystem**
 - [Modular-engine](https://github.com/cianciarusocataldo/modular-engine)
 - [Modular-ui-components](https://github.com/cianciarusocataldo/modular-ui-components)

@@ -193,13 +193,6 @@ export const ModalDebugComponent = () => {
 };
 ```
 
-| Selectors       | Returns                                                                          |
-| --------------- | -------------------------------------------------------------------------------- |
-| getModalView    | Modal state, or default state if not enabled                                     |
-| getModalType    | Modal type, that can be used as a key to find the right component to show        |
-| getModalContext | Modal context, a custom object associated to the actual modal type (can be null) |
-| isModalVisible  | Modal visibility, to determine when show or hide the Modal component             |
-
 <br>
 
 ---
