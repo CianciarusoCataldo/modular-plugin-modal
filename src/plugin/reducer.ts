@@ -1,5 +1,9 @@
 /**
- * @file `modal` state slice reducer file
+ * @file [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) reducer file
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-engine
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -19,9 +23,13 @@ import {
 } from "./actions";
 
 /**
- * Internal `modal` reducer
+ * Internal [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) reducer
  *
- * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
+ * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-engine
+ *
+ *  @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright Cataldo Cianciaruso 2022
  *
@@ -29,7 +37,7 @@ import {
 const modalReducer: ModularEngineEffects<ModalPluginState> = {
   [openModal.type]: (state, action) => ({
     ...state,
-    isVisible: true,
+    isVisible: action.payload.type !== null,
     type: action.payload.type,
     context: action.payload.context || state.context,
   }),
@@ -41,7 +49,7 @@ const modalReducer: ModularEngineEffects<ModalPluginState> = {
   }),
   [setModalContext.type]: (state, action) => ({
     ...state,
-    context: action.payload.context,
+    context: action.payload.context || state.context,
   }),
   [setModalVisiblity.type]: (state, action) => ({
     ...state,
@@ -49,7 +57,7 @@ const modalReducer: ModularEngineEffects<ModalPluginState> = {
   }),
   [setModalForm.type]: (state, action) => ({
     ...state,
-    type: action.payload.type,
+    type: action.payload.type || state.type,
   }),
 };
 

@@ -1,49 +1,64 @@
 /**
- * @file `modal` state slice actions, used to interact with app modal (to show/hide it, for example)
+ * @file[modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) actions, used to interact with app modal
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-engine
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright Cataldo Cianciaruso 2022
  */
 
-import { createModularAction } from "modular-utils";
+import { createModularAction } from "modular-engine-tools";
 
 /**
- * Open modular-engine modal, with selected content inside (from app/modals) and with given context (default to empty object)
+ * Open the modal, with given context (default to empty object), only if given form type is defined
+ *
+ * @param {string} type modal form to open
+ * @param {Record<string,any>} context (optional) custom data associated with given modal form type
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-engine
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright Cataldo Cianciaruso 2022
- *
  */
 export const openModal = createModularAction<{
   type: string;
   context?: Record<string, any>;
-}>(
-  "@@modal/OPEN_MODAL",
-  ({ form, context }: { form: string; context?: Record<string, any> }) => ({
-    type: form,
-    context: context,
-  })
-);
+}>("@@modal/OPEN_MODAL", (type: string, context?: Record<string, any>) => ({
+  type,
+  context,
+}));
 
 /**
- * Close modular-engine modal
+ * Close the modal, and reset the context
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-engine
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright Cataldo Cianciaruso 2022
- *
  */
 export const closeModal = createModularAction("@@modal/CLOSE_MODAL");
 
 /**
- * set modular-engine modal context
+ * Set modal context
+ *
+ * @param {Record<string,any>} context custom modal context to set
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-engine
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright Cataldo Cianciaruso 2022
- *
  */
 export const setModalContext = createModularAction(
   "@@modal/SET_CONTEXT",
@@ -51,12 +66,17 @@ export const setModalContext = createModularAction(
 );
 
 /**
- * set modular-engine modal context
+ * Set modal visibility
+ *
+ * @param {boolean} visibility new modal visibility
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-engine
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright Cataldo Cianciaruso 2022
- *
  */
 export const setModalVisiblity = createModularAction(
   "@@modal/SET_VISIBILITY",
@@ -64,12 +84,17 @@ export const setModalVisiblity = createModularAction(
 );
 
 /**
- * set modular-engine modal form type
+ * Set modal form type
+ *
+ * @param {string} type modal form type to set
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ *
+ * @see https://github.com/CianciarusoCataldo/modular-engine
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright Cataldo Cianciaruso 2022
- *
  */
 export const setModalForm = createModularAction(
   "@@modal/SET_FORM_TYPE",
