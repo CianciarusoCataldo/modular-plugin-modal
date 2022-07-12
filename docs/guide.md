@@ -13,22 +13,7 @@ Manage your web app modal with [modular-engine](https://github.com/CianciarusoCa
 
 <br>
 
----
 
-## Summary
-
-- [Getting started](#getting-started)
-  - [Installation](#installation)
-  - [Usage](#usage)
-- [API](#api)
-  - [Actions](#actions)
-  - [Selectors](#selectors)
-- [Integration with other plugins](#integration-with-other-plugins)
-- [Included libraries](#included-libraries)
-- [Authors](#authors)
-- [License](#license)
-
-<br>
 
 ---
 
