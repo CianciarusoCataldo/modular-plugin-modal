@@ -12,4 +12,9 @@ export {
   getModalView,
   isModalVisible,
 } from "./plugin/selectors";
-export { ModalPluginState } from "./plugin/types";
+export {
+  ModalPluginState,
+  ModalPlugin,
+  ModalPluginCallback,
+  ModalPluginSettings,
+} from "./plugin/types";

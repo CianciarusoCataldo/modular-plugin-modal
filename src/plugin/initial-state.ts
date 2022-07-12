@@ -1,5 +1,5 @@
 /**
- * @file `modal` state slice initial state file
+ * @file [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) initial state file
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -9,7 +9,7 @@
 import { ModalPluginState } from "./types";
 
 /**
- * Internal `modal` slice initial state
+ * Internal [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) slice initial state
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
