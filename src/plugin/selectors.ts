@@ -1,9 +1,9 @@
 /**
  * @file [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) slice selectors
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal#selectors
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal/#/?id=selectors
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -22,9 +22,9 @@ import modalInitialState from "./initial-state";
  *
  * Returns [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) slice, or the default state if the plugin is not enabled
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal#selectors
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal/#/?id=selectors
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -37,9 +37,9 @@ export const getModalView = (
 /**
  * Returns the app modal visibility
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal#selectors
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal/#/?id=selectors
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -53,9 +53,9 @@ export const isModalVisible = createModularSelector(
 /**
  * Returns actually opened modal type, null if no modal is opened
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal#selectors
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal/#/?id=selectors
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -69,9 +69,9 @@ export const getModalType = createModularSelector(
 /**
  * Returns actual modal context
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal#selectors
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal/#/?id=selectors
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

@@ -1,9 +1,9 @@
 /**
  * @file [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) reducer file
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -25,9 +25,9 @@ import {
 /**
  * Internal [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) reducer
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  *  @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

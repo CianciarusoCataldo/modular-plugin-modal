@@ -1,6 +1,6 @@
 {
   "name": "modular-plugin-modal",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Manage your web app modal with modular-engine system",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",

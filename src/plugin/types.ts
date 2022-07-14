@@ -1,7 +1,9 @@
 /**
  * @file [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) type definitions
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal
+ *
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -16,7 +18,9 @@ import {
 /**
  * [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) state slice
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal
+ *
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -24,15 +28,22 @@ import {
  *
  */
 export type ModalPluginState = ModularEngineCustomState<{
+  /** modal visibility */
   isVisible: boolean;
+
+  /** modal form type */
   type: string | null;
+
+  /** modal context data */
   context: Record<string, any>;
 }>;
 
 /**
  * [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) callback
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal
+ *
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -45,20 +56,29 @@ export type ModalPluginCallback = (
 /**
  *[modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) config settings
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal/#/?id=config
+ *
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright Cataldo Cianciaruso 2022
  */
 export type ModalPluginSettings = ModularEngineCustomState<{
+  /** Functions called everytime the modal is closed */
   onModalClose?: ModalPluginCallback[];
+
+  /** Functions called everytime the modal is opened */
   onModalOpen?: ModalPluginCallback[];
 }>;
 
 /**
  *[modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) interface
-
+ *
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal
+ *
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
+ *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright Cataldo Cianciaruso 2022

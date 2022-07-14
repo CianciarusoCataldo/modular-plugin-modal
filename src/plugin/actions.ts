@@ -1,9 +1,9 @@
 /**
  * @file[modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) actions, used to interact with app modal
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal/#/?id=actions
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -18,9 +18,9 @@ import { createModularAction } from "modular-engine-tools";
  * @param {string} type modal form to open
  * @param {Record<string,any>} context (optional) custom data associated with given modal form type
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal/#/?id=actions
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -37,9 +37,9 @@ export const openModal = createModularAction<{
 /**
  * Close the modal, and reset the context
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal/#/?id=actions
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -52,9 +52,9 @@ export const closeModal = createModularAction("@@modal/CLOSE_MODAL");
  *
  * @param {Record<string,any>} context custom modal context to set
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal/#/?id=actions
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -70,9 +70,9 @@ export const setModalContext = createModularAction(
  *
  * @param {boolean} visibility new modal visibility
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal/#/?id=actions
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -88,9 +88,9 @@ export const setModalVisiblity = createModularAction(
  *
  * @param {string} type modal form type to set
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal/#/?id=actions
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

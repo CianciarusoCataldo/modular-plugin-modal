@@ -1,9 +1,9 @@
 /**
  * @file [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) file
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -37,9 +37,9 @@ import modalReducer from "./reducer";
  *
  * module.exports = { config };
  *
- * @see https://github.com/CianciarusoCataldo/modular-plugin-modal
+ * @see https://cianciarusocataldo.github.io/modular-plugin-modal
  *
- * @see https://github.com/CianciarusoCataldo/modular-engine
+ * @see https://cianciarusocataldo.github.io/modular-engine/docs
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -100,7 +100,7 @@ const modalPlugin: ModalPlugin = () => ({
 
     input.redux?.middlewares?.push((action, store) => {
       const state = store.getState();
-      
+
       switch (action.type) {
         case actions.openModal.type: {
           callBacks.onModalOpen(state.modal.context);

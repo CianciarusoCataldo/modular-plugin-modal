@@ -21,6 +21,7 @@ Manage your web app modal with [modular-engine](https://github.com/CianciarusoCa
   - [Installation](#installation)
   - [Usage](#usage)
 - [API](#api)
+  - [Config](#config)
   - [Actions](#actions)
   - [Selectors](#selectors)
 - [Integration with other plugins](#integration-with-other-plugins)
@@ -99,7 +100,12 @@ export const CustomComponent = () => {
 
 ## API
 
-With the plugin itself, some other useful selectors and actions are exported by this lib, to easily work with any component
+### Config
+
+This plugin adds adds a custom field inside modular-engine config, `modal`. Inside this field, there are the plugin settings:
+
+- `onModalClose` : array of functions, that are called everytime the modal is closed
+- `onModalOpen` : array of functions, that are called everytime the modal is opened
 
 ### Actions
 
@@ -199,10 +205,26 @@ export const ModalDebugComponent = () => {
 
 ## Integration with other plugins
 
-- This plugin expose some fields to work with any other plugin. If you want to interact with it, using your custom plugin, just check the `enabledPlugins` parameter inside your `format` function for `modal`. If true, you can add your callbacks to `modal` field, that contains 2 fields:
+- This plugin expose some fields to work with any other plugin. If you want to interact with it, using your custom plugin, just check the `enabledPlugins` parameter inside your `format` function for `modal`. If true, you can add your callbacks to `modal` field (check [config section](#config) for details). For example, to add a custom function to be called when modal is opened, inside the `format` function of your custom plugin:
 
-  - onModallClose : callbacks called everytime the modal is closed
-  - onModalOpen : callbacks called everytime the modal is opened
+```tsx
+//Just a skeleton of a custom plugin that interacts with router plugin
+const customPlugin = () => ({
+  // Custom plugin stuffs
+
+  format: (config, enabledPlugins) => {
+    // Custom plugin stuffs
+
+    //Check for `router` plugin
+    if (enabledPlugins.modal) {
+      //Add the custom callback
+      config.modal.onModalOpened.push(() => {
+        alert("Modal opened");
+      });
+    }
+  },
+});
+```
 
   <br>
 
