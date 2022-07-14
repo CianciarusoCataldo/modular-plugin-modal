@@ -16,7 +16,7 @@ import * as actions from "./actions";
 import modalReducer from "./reducer";
 
 /**
- * [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) plugin. Extends [modular-engine](https://github.com/CianciarusoCataldo/modular-engine) 
+ * [modular-plugin-modal](https://github.com/CianciarusoCataldo/modular-plugin-modal) plugin. Extends [modular-engine](https://github.com/CianciarusoCataldo/modular-engine)
  * system with a modal manager, to drive the web app modal with global actions and centralized values for visibility and, optionally, additional data associated with every modal.
  * To use it, add it to `plugins` array inside modular-engine config
  *
@@ -98,7 +98,9 @@ const modalPlugin: ModalPlugin = () => ({
       },
     };
 
-    input.redux?.middlewares?.push((action, state) => {
+    input.redux?.middlewares?.push((action, store) => {
+      const state = store.getState();
+      
       switch (action.type) {
         case actions.openModal.type: {
           callBacks.onModalOpen(state.modal.context);
